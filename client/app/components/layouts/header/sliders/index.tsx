@@ -22,7 +22,7 @@ function SlidersCustom() {
       modules={[Pagination, Navigation]}
     >
       {ItemsSlider.map((items) => (
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide key={items.id}>Slide 1</SwiperSlide>
       ))}
     </Swiper>
   );

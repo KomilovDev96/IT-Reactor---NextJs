@@ -14,7 +14,7 @@ export default function MainProviders(props: IProps): ReactElement {
   return (
     <HeadProvider>
       <GridThemeProvider gridTheme={gridTheme}>
-        <Layout>{children}</Layout>
+          <Layout>{children}</Layout>
       </GridThemeProvider>
     </HeadProvider>
   );
