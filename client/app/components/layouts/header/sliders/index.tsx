@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ItemsSlider } from "./SliderITems";
+import Image from "next/image";
 function SlidersCustom() {
   return (
     <Swiper
@@ -22,7 +23,13 @@ function SlidersCustom() {
       modules={[Pagination, Navigation]}
     >
       {ItemsSlider.map((items) => (
-        <SwiperSlide key={items.id}>Slide 1</SwiperSlide>
+        <SwiperSlide key={items.id}>
+          <div className="item">
+              <div className="item__images">
+                <Image src={items.img} width={4000} height={500} alt={items.alt}/>
+              </div>
+          </div>
+        </SwiperSlide>
       ))}
     </Swiper>
   );
