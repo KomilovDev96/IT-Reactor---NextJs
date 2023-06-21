@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-
+import styles from "./slider.module.scss";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ItemsSlider } from "./SliderITems";
 import Image from "next/image";
+import { Container } from "styled-bootstrap-grid";
 function SlidersCustom() {
   return (
     <Swiper
@@ -24,10 +25,34 @@ function SlidersCustom() {
     >
       {ItemsSlider.map((items) => (
         <SwiperSlide key={items.id}>
-          <div className="item">
-              <div className="item__images">
-                <Image src={items.img} width={4000} height={500} alt={items.alt}/>
+          <div className={styles.item}>
+            <div className={styles.image}>
+              <Image
+                src={items.img}
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{ width: "100%", height: "auto" }}
+                alt={items.alt}
+                priority
+              />
+            </div>
+            <Container>
+              <div className={styles.position}>
+                <div className={styles.title}>
+                  <h1>IT Reactor - Zamonaviy kasblar markazi</h1>
+                </div>
+                <div className={styles.text}>
+                  <p>
+                    Biz sizga ta'lim berishdan charchamaymiz siz esa o'qishdan
+                    charchamang!
+                  </p>
+                </div>
+                <div className={styles.button}>
+                  <button>Batafsil ma'lumot</button>
+                </div>
               </div>
+            </Container>
           </div>
         </SwiperSlide>
       ))}
