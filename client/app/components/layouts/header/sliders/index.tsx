@@ -34,7 +34,6 @@ function SlidersCustom() {
                 sizes="100vw"
                 style={{ width: "100%", height: "auto" }}
                 alt={items.alt}
-                priority
               />
             </div>
             <Container>
