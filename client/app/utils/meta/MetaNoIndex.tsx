@@ -6,7 +6,7 @@ export const MetaNoIndex: FC<{ title?: string }> = ({ title = 'Error' }) => {
     return (
         <Head>
             <title>{titleMerge(title)}</title>
-            <meta name='robots' content='noindex, nofollow' />
+            <meta name='robots' content='noindex' />
         </Head>
     )
 }

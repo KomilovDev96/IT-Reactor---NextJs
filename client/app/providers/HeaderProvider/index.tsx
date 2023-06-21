@@ -25,7 +25,6 @@ const HeadProvider = ({ children }: IHeadeProvider) => {
                 />
 
                 <Favicons />
-
                 <meta name="theme-color" content={"#181B1E"} />
                 <meta name="msapplication-navbutton-color" content={"#181B1E"} />
                 <meta
