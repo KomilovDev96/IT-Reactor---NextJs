@@ -3,7 +3,7 @@ import { Meta } from "@/app/utils/meta";
 import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "styled-bootstrap-grid";
-
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 type Props = {};
 
 function HomePage({}: Props) {
@@ -45,15 +45,64 @@ function HomePage({}: Props) {
       </main>
       <section className="kurs">
         <h2>Bizning darslar</h2>
+        <Tabs>
+          <div className="kurs__tabs">
+            <TabList className="kurs__menu">
+              <Tab className="kurs__menuItems">Barcha kurslar</Tab>
+              <Tab className="kurs__menuItems">Front-End</Tab>
+              <Tab className="kurs__menuItems">Back-End</Tab>
+              <Tab className="kurs__menuItems">Dizayn</Tab>
+              <Tab className="kurs__menuItems">Smm</Tab>
+              <Tab className="kurs__menuItems">Smm</Tab>
+            </TabList>
+          </div>
+          <Container>
+            <Row>
+              <Col>
+                <div className="kurs__items">
+                  <TabPanel>
+                    <h2>Any content 1</h2>
+                  </TabPanel>
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </Tabs>
+      </section>
+      <section className="teachers">
+        <h2>Akademiyada o’qitadigan ustozlar</h2>
         <Container>
           <Row>
-            <Col>
-              <div className="kurs__items">
-                  
+            <Col xl={3}>
+              <div className="teachers__block">
+                <h3>Komilov Aziz</h3>
+                <p>ux/ui design</p>
+              </div>
+            </Col>
+            <Col xl={3}>
+              <div className="teachers__block">
+                <h3>Komilov Aziz</h3>
+                <p>ux/ui design</p>
+              </div>
+            </Col>
+            <Col xl={3}>
+              <div className="teachers__block">
+                <h3>Komilov Aziz</h3>
+                <p>ux/ui design</p>
+              </div>
+            </Col>
+            <Col xl={3}>
+              <div className="teachers__block">
+                <h3>Komilov Aziz</h3>
+                <p>ux/ui design</p>
               </div>
             </Col>
           </Row>
         </Container>
+      </section>
+      <section className="questions">
+        <h2>Ko‘p so‘ralgan savollar</h2>
+        <Container></Container>
       </section>
     </Meta>
   )
