@@ -8,7 +8,7 @@ type Props = {};
 
 function HomePage({}: Props) {
   return (
-    <Meta title="Главная страница">
+    <Meta title="Главная страница" description="IT - Reactor">
       Главная страница
       <main className="about">
         <h2>Biz haqimizda</h2>
