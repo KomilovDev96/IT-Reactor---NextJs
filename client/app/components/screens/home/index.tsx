@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "styled-bootstrap-grid";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { TeacherData, ITeacherData } from "@/app/components/fakerData";
 type Props = {};
 
 function HomePage({}: Props) {
@@ -53,7 +54,6 @@ function HomePage({}: Props) {
               <Tab className="kurs__menuItems">Back-End</Tab>
               <Tab className="kurs__menuItems">Dizayn</Tab>
               <Tab className="kurs__menuItems">Smm</Tab>
-              <Tab className="kurs__menuItems">Smm</Tab>
             </TabList>
           </div>
           <Container>
@@ -62,6 +62,18 @@ function HomePage({}: Props) {
                 <div className="kurs__items">
                   <TabPanel>
                     <h2>Any content 1</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>Any content 2</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>Any content 3</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>Any content 4</h2>
+                  </TabPanel>
+                  <TabPanel>
+                    <h2>Any content 5</h2>
                   </TabPanel>
                 </div>
               </Col>
@@ -73,39 +85,25 @@ function HomePage({}: Props) {
         <h2>Akademiyada o’qitadigan ustozlar</h2>
         <Container>
           <Row>
-            <Col xl={3}>
-              <div className="teachers__block">
-                <h3>Komilov Aziz</h3>
-                <p>ux/ui design</p>
-              </div>
-            </Col>
-            <Col xl={3}>
-              <div className="teachers__block">
-                <h3>Komilov Aziz</h3>
-                <p>ux/ui design</p>
-              </div>
-            </Col>
-            <Col xl={3}>
-              <div className="teachers__block">
-                <h3>Komilov Aziz</h3>
-                <p>ux/ui design</p>
-              </div>
-            </Col>
-            <Col xl={3}>
-              <div className="teachers__block">
-                <h3>Komilov Aziz</h3>
-                <p>ux/ui design</p>
-              </div>
-            </Col>
+            {TeacherData.map((items: ITeacherData) => (
+              <Col key={items.id} xl={3}>
+                <div className="teachers__block">
+                  <h3>Komilov Aziz</h3>
+                  <p>ux/ui design</p>
+                </div>
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>
       <section className="questions">
         <h2>Ko‘p so‘ralgan savollar</h2>
-        <Container></Container>
+        <Container>
+                
+        </Container>
       </section>
     </Meta>
-  )
+  );
 }
 
 export default HomePage;
