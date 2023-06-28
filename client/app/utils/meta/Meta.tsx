@@ -15,7 +15,8 @@ export const Meta = ({
   children,
 }: any): any => {
   const { asPath } = useRouter();
-  const currentUrl = `${process.env.APP_URL}${asPath}`;
+  //   const currentUrl = `${process.env.APP_URL}${asPath}`;
+  const currentUrl = `https://it-reactor-next-js.vercel.app/${asPath}`;
   return (
     <>
       {description ? (
@@ -26,7 +27,6 @@ export const Meta = ({
             name="description"
             content={onlyText(description, 152)}
           />
-          <meta name="robots" content="noindex"/>
           <link rel="canonical" href={currentUrl} />
           <meta property="og:locale" content="en" />
           <meta property="og:title" content={titleMerge(title)} />
@@ -37,6 +37,7 @@ export const Meta = ({
             property="og:description"
             content={onlyText(description, 197)}
           />
+          <meta name="robots" content="noindex" />
         </Head>
       ) : (
         <MetaNoIndex title={title} />
