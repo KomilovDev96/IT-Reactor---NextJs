@@ -363,7 +363,7 @@ export const NavBar = () => {
               Leaving: "transition ease-in duration-150"
                 From: "opacity-100 translate-y-0"
                 To: "opacity-0 translate-y-1"
-            */}{" "}
+            */}
                 <div
                   onMouseLeave={() => setFlyerTwo(false)}
                   className={
@@ -792,12 +792,12 @@ export const NavBar = () => {
                   href="#"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                 >
-                  Sign up
+                  Ro'yhatdan o'tish
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
+                    Kirish
                   </a>
                 </p>
               </div>

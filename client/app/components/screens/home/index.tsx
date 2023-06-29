@@ -5,12 +5,15 @@ import React from "react";
 import { Col, Container, Row } from "styled-bootstrap-grid";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { TeacherData, ITeacherData } from "@/app/components/fakerData";
-type Props = {};
+import { useTranslation } from "next-i18next";
 
-function HomePage({}: Props) {
+function HomePage({ props }: any) {
+  console.log(props);
+  const {t} = useTranslation()
   return (
     <Meta title="Главная страница" description="IT - Reactor">
       Главная страница
+      {t('title')}
       <main className="about">
         <h2>Biz haqimizda</h2>
         <Container>
@@ -98,9 +101,7 @@ function HomePage({}: Props) {
       </section>
       <section className="questions">
         <h2>Ko‘p so‘ralgan savollar</h2>
-        <Container>
-                
-        </Container>
+        <Container></Container>
       </section>
     </Meta>
   );
