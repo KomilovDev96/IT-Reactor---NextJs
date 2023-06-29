@@ -6,20 +6,20 @@ import { Col, Container, Row } from "styled-bootstrap-grid";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { TeacherData, ITeacherData } from "@/app/components/fakerData";
 import { useTranslation } from "next-i18next";
+import { Dropdownlangue } from "@/app/components/shared";
 
 function HomePage({ props }: any) {
-  console.log(props);
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <Meta title="Главная страница" description="IT - Reactor">
       Главная страница
-      {t('title')}
       <main className="about">
         <h2>Biz haqimizda</h2>
         <Container>
           <Row>
             <Col lg={6}>
               <div className="about__left">
+                <Dropdownlangue />
                 <h3>Umid ta’lim o‘quv markazi haqida</h3>
                 <p>
                   Umid ta’lim o‘quv markazi 2023-yil 22-iyulda tashkil etilgan
