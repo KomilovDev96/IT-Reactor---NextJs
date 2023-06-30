@@ -15,6 +15,7 @@ function HomePage({ props }: any) {
       Главная страница
       <main className="about">
         <h2>Biz haqimizda</h2>
+        {t('Kurslar')}
         <Container>
           <Row>
             <Col lg={6}>

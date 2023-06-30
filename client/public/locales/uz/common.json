@@ -1,1 +1,12 @@
-{ "title": "Salom" }
+{
+  "Kurslar": "Kurslar",
+  "Veb dizayn": "Veb Dizayn",
+  "Veb dasturlash": "Веб програмирование",
+  "VebsaytlarDiz": "Vebsaytlar, veb-ilovalar uchun veb-foydalanuvchi interfeyslari loyihalanadigan dizayn turi",
+  "Vebsaytlar": "Mijoz-server modeli yordamida Butunjahon oʻrgimchak toʻri dasturlarini ishlab chiqishga ixtisoslashgan yoki u bilan shugʻullanadigan dasturchi",
+  "MarketingSmm": "Social Media Marketing [SMM] – bu ingliz tilidan ijtimoiy media marketing bo’lib, Internet marketingning bir turi deb hisoblanadi. Uning asosiy maqsadi – ijtimoiy tarmoqlardan mijozlarni mahsulot va xizmatlaringizga jalb etish",
+  "Biz hamizda": "Biz hamizda",
+  "Yangiliklar": "Yangiliklar",
+  "Biz bilan bog'lanish": "Biz bilan bog'lanish",
+  "SMM Marketing": "SMM Marketing"
+}
