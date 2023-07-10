@@ -1,6 +1,16 @@
-.item{
-    @apply relative;
+.item {
+  @apply relative;
 }
-.position{
-    @apply absolute text-white z-10 top-6 left-10 max-w-7xl mx-auto px-4 sm:px-6; 
+.position {
+  @apply absolute text-white z-10 top-6 left-10 max-w-7xl mx-auto px-4 sm:px-6;
+}
+.title {
+  h1 {
+    @apply: text-white;
+  }
+}
+.text {
+  p {
+    @apply: text-white;
+  }
 }

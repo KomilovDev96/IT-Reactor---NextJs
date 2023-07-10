@@ -1,3 +1,21 @@
-.headerLayout{
-    padding: 50px 0;
+.headerLayout {
+  padding: 50px 0;
+}
+.flexCol{
+    @apply flex flex-col justify-center;
+}
+.title {
+  h1 {
+    @apply text-white font-bold text-5xl mb-5;
+  }
+}
+.text {
+  p {
+    @apply text-white text-3xl mb-7;
+  }
+}
+.button {
+  button {
+    @apply whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700;
+  }
 }

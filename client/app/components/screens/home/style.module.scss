@@ -1,0 +1,31 @@
+
+/* ====== ABOUT ======== */
+.about{
+    @apply pb-20 pt-10 bg-white;
+}
+.aboutTitle{
+    @apply text-center;
+}
+.title{
+   @apply text-base mb-3 text-slate-500;
+}
+.text{
+    @apply text-5xl font-bold mb-10 text-gray-800;
+}
+.aboutLeft{
+    @apply p-20;
+    border: 1px solid #F3F5F7;
+    border-radius: 20px;
+    h3{
+        @apply font-bold text-3xl text-gray-800 mb-6;
+    }
+    p{
+        @apply text-base text-gray-600 mb-4;
+    }
+}
+
+
+/* ====== KURS ======== */
+.kurs{
+    @apply pb-20 pt-10 bg-white;
+}

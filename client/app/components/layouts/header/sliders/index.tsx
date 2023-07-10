@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import styles from "./slider.module.scss";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -8,10 +7,10 @@ import Lottie from "lottie-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { ItemsSlider } from "./SliderITems";
 import Image from "next/image";
 import { Container } from "styled-bootstrap-grid";
 import { LottieWebDeveloper } from "@/app/assets";
+import styles from "./slider.module.scss";
 function SlidersCustom() {
   return (
     <Swiper

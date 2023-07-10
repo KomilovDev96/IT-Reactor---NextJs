@@ -1,13 +1,13 @@
 import React from "react";
 import { NavBar } from "./navbar";
-import StyleHeader from "./header.module.scss";
 import Lottie from "lottie-react";
-import SlidersCustom from "./sliders";
 import { Container, Row, Col } from "styled-bootstrap-grid";
 import { LottieWebDeveloper } from "@/app/assets";
-type Props = {};
+import StyleHeader from "./header.module.scss";
+import { useTranslation } from "react-i18next";
 
-function HeaderLayout({}: Props) {
+function HeaderLayout() {
+  const { t } = useTranslation();
   return (
     <>
       <NavBar />
@@ -15,7 +15,7 @@ function HeaderLayout({}: Props) {
         <Container>
           <div className={StyleHeader.position}>
             <Row>
-              <Col xl={6}>
+              <Col xl={6} className={StyleHeader.flexCol}>
                 <div className={StyleHeader.title}>
                   <h1>IT Reactor - Zamonaviy kasblar markazi</h1>
                 </div>
@@ -26,7 +26,7 @@ function HeaderLayout({}: Props) {
                   </p>
                 </div>
                 <div className={StyleHeader.button}>
-                  <button>Batafsil ma'lumot</button>
+                  <button> {t("Biz bilan bog'lanish")}</button>
                 </div>
               </Col>
               <Col xl={6}>
